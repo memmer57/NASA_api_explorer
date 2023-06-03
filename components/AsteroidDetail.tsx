@@ -59,18 +59,26 @@ export default function AsteroidDetail(props: IProps) {
                 <>
                     <h2>{data.name}</h2>
                     <h5>General info</h5>
-                    <p>ID : {data.id}</p>
                     <p>
-                        Estimated diameter :{' '}
-                        {
-                            data.estimated_diameter.kilometers
-                                .estimated_diameter_max
-                        }{' '}
-                        km
+                        ID: <strong>{data.id}</strong>
+                    </p>
+                    <p>
+                        Estimated diameter:{' '}
+                        <strong>
+                            {
+                                data.estimated_diameter.kilometers
+                                    .estimated_diameter_max
+                            }{' '}
+                            km
+                        </strong>
                     </p>
                     <p>
                         Is potentially hazardous:{' '}
-                        {data.is_potentially_hazardous_asteroid ? 'Yes' : 'No'}
+                        <strong>
+                            {data.is_potentially_hazardous_asteroid
+                                ? 'Yes'
+                                : 'No'}
+                        </strong>
                     </p>
                     <h5>Close Approach info</h5>
                     {data.close_approach_data &&
@@ -94,24 +102,35 @@ export default function AsteroidDetail(props: IProps) {
                                     return (
                                         <>
                                             <p>
-                                                Close Approach Date:{' '}
-                                                {approach.close_approach_date}
+                                                Close Approach Date:
+                                                <strong>
+                                                    {' '}
+                                                    {
+                                                        approach.close_approach_date
+                                                    }
+                                                </strong>
                                             </p>
                                             <p>
                                                 Relative Velocity:{' '}
-                                                {
-                                                    approach.relative_velocity
-                                                        .kilometers_per_hour
-                                                }{' '}
-                                                km/h
+                                                <strong>
+                                                    {
+                                                        approach
+                                                            .relative_velocity
+                                                            .kilometers_per_hour
+                                                    }{' '}
+                                                    km/h
+                                                </strong>
                                             </p>
                                             <p>
-                                                Miss Distance:{' '}
-                                                {
-                                                    approach.miss_distance
-                                                        .kilometers
-                                                }{' '}
-                                                km
+                                                Miss Distance:
+                                                <strong>
+                                                    {' '}
+                                                    {
+                                                        approach.miss_distance
+                                                            .kilometers
+                                                    }{' '}
+                                                    km
+                                                </strong>
                                             </p>
                                         </>
                                     )
@@ -125,27 +144,41 @@ export default function AsteroidDetail(props: IProps) {
                     )}
                     <h5>Orbital info</h5>
                     <p>
-                        Orbiting body :{' '}
-                        {data.close_approach_data[0].orbiting_body}
+                        Orbiting body:{' '}
+                        <strong>
+                            {data.close_approach_data[0].orbiting_body}
+                        </strong>
                     </p>
                     <p>
-                        Orbital period : {data.orbital_data.orbital_period} days
+                        Orbital period:{' '}
+                        <strong>{data.orbital_data.orbital_period} days</strong>
                     </p>
                     <p>
-                        First observation date :{' '}
-                        {data.orbital_data.first_observation_date}
+                        First observation date:{' '}
+                        <strong>
+                            {data.orbital_data.first_observation_date}
+                        </strong>
                     </p>
                     <p>
-                        Last observation date :{' '}
-                        {data.orbital_data.last_observation_date}
+                        Last observation date:{' '}
+                        <strong>
+                            {data.orbital_data.last_observation_date}
+                        </strong>
                     </p>
                     <p>
-                        Orbit determination date :{' '}
-                        {data.orbital_data.orbit_determination_date}
+                        Orbit determination date:{' '}
+                        <strong>
+                            {data.orbital_data.orbit_determination_date}
+                        </strong>
                     </p>
                     <p>
-                        Orbital class description :{' '}
-                        {data.orbital_data.orbit_class.orbit_class_description}
+                        Orbital class description:{' '}
+                        <strong>
+                            {
+                                data.orbital_data.orbit_class
+                                    .orbit_class_description
+                            }
+                        </strong>
                     </p>
                 </>
             )}

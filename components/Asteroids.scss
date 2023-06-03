@@ -41,3 +41,26 @@ table {
 .select-container {
     position: relative;
 }
+
+@media screen and (max-width: 992px) {
+    /*Make the big table fit on a mobile*/
+    table {
+        table-layout: fixed;
+        overflow-x: auto;
+        display: block;
+
+        th {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+        td {
+            padding: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-bottom: 0;
+    }
+}

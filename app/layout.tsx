@@ -23,8 +23,8 @@ export default function RootLayout({
                     <Image
                         src={'/images/NASA.svg'}
                         alt="NASA logo"
-                        width={112}
-                        height={33}
+                        width={107}
+                        height={28}
                     />
                 </Link>
                 <main>{children}</main>

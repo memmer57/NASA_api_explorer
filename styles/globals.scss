@@ -57,3 +57,30 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        section {
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .homepage-button {
+        top: 1rem !important;
+        left: 1rem !important;
+
+        img {
+            width: 7rem;
+        }
+    }
+}

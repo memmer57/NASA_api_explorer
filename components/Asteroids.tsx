@@ -76,7 +76,7 @@ export default function Asteroids() {
     const customStyles = {
         control: (base: any, state: any) => ({
             ...base,
-            width: 300,
+            width: 230,
             backgroundColor: '#333',
             borderColor: state.isFocused ? 'white' : 'grey',
             boxShadow: state.isFocused ? '0 0 0 1px grey' : 'none',
@@ -111,7 +111,7 @@ export default function Asteroids() {
         menu: (base: any) => ({
             ...base,
             backgroundColor: '#222',
-            width: 300,
+            width: 230,
         }),
     }
 
