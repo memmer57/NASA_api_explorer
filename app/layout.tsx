@@ -1,9 +1,9 @@
-import { Space_Mono } from 'next/font/google'
+import { Kanit } from 'next/font/google'
 import '../styles/globals.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const inter = Space_Mono({ subsets: ['latin'], weight: ['400', '700'] })
+const inter = Kanit({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata = {
     title: 'NASA API Explorer',

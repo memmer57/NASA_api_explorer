@@ -9,11 +9,6 @@ h1 {
     margin-bottom: 2rem;
 }
 
-img {
-    width: 100%;
-    object-fit: contain;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -23,10 +18,26 @@ table {
     td {
         padding: 1rem;
         border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.396);
+
+        a {
+            color: white;
+
+            &:hover {
+                color: rgb(200, 200, 200);
+            }
+        }
     }
 
     th {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.455);
         color: black;
+        font-size: 1.1rem;
     }
+}
+
+/* Select */
+/* Container */
+.select-container {
+    position: relative;
 }

@@ -69,7 +69,13 @@ export default function ImageOfTheDay() {
             </div>
             {loading && <p>Loading...</p>}
             {randomDate && <p>Random date: {randomDate}</p>}
-            {imageUrl && <img src={imageUrl} alt="NASA Image of the Day" />}
+            {imageUrl && (
+                <img
+                    src={imageUrl}
+                    className="image-of-day"
+                    alt="NASA Image of the Day"
+                />
+            )}
             {imageInfo && <p>{imageInfo}</p>}
         </section>
     )
