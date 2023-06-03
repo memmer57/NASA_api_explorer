@@ -116,7 +116,7 @@ export default function Asteroids() {
     }
 
     return (
-        <section>
+        <section className="asteroids">
             <h1>Asteroids</h1>
             <br />
             <div>

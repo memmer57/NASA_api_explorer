@@ -47,7 +47,7 @@ export default function AsteroidDetail(props: IProps) {
     }
 
     return (
-        <section>
+        <section className="asteroid-detail">
             <h1>Asteroid Detail</h1>
             <div className="button-container">
                 <Link href="/asteroids" className="button">

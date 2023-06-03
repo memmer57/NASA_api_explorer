@@ -3,7 +3,7 @@ import Card from './shared/Card'
 
 export default function HomePage() {
     return (
-        <section>
+        <section className="homepage">
             <h1>NASA API explorer</h1>
             <p className="card-container-header">What would you like to see?</p>
             <div className="card-container">

@@ -1,16 +1,24 @@
-h1 {
-    margin-bottom: 5rem;
-}
+section.homepage {
+    h1 {
+        margin-bottom: 5rem;
+    }
 
-.card-container-header {
-    text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-}
+    .card-container-header {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
 
-.card-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    .card-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            margin-bottom: 3rem;
+        }
+    }
 }

@@ -1,31 +1,33 @@
-h1 {
-    margin-bottom: 2rem;
-}
+section.asteroid-detail {
+    h1 {
+        margin-bottom: 2rem;
+    }
 
-h2 {
-    margin-bottom: 0;
-    font-size: 1.8rem;
-}
+    h2 {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+    }
 
-h5 {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem;
-    text-decoration: underline;
-}
+    h5 {
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+        text-decoration: underline;
+    }
 
-p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    font-size: 1.1rem;
-}
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        font-size: 1.1rem;
+    }
 
-strong {
-    font-weight: 700;
-    font-size: 1.2rem;
-}
+    strong {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
