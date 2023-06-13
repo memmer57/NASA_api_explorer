@@ -70,11 +70,17 @@ export default function ImageOfTheDay() {
             {loading && <p>Loading...</p>}
             {randomDate && <p>Random date: {randomDate}</p>}
             {imageUrl && (
-                <img
-                    src={imageUrl}
-                    className="image-of-day"
-                    alt="NASA Image of the Day"
-                />
+                <>
+                    {imageUrl.includes('youtube.com') ? (
+                        <iframe src={imageUrl}></iframe>
+                    ) : (
+                        <img
+                            src={imageUrl}
+                            className="image-of-day"
+                            alt="NASA Image of the Day"
+                        />
+                    )}
+                </>
             )}
             {imageInfo && <p>{imageInfo}</p>}
         </section>
